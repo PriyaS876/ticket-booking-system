@@ -2,10 +2,7 @@ const redis = require('redis');
 const pool = require('./db');
 
 const subscriber = redis.createClient({
-  socket: {
-    host: 'localhost',
-    port: 6379
-  }
+  url: process.env.REDIS_URL || 'redis://localhost:6379'
 });
 
 subscriber.on('error', (err) => console.error('Redis Subscriber Error:', err));
