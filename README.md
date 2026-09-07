@@ -24,26 +24,25 @@ When multiple users try to book the same seat at the same time, most naive imple
 2. **Redis TTL + keyspace notifications** to automatically release a seat if the user doesn't complete payment within 5 minutes.
 
 ---
+## Screenshots
 
-## 📸 Screenshots
+### Login Page
+![Login](./screenshots/Login%20(2).png)
 
-**Login**
+### Available Shows
+![Available Shows](./screenshots/available%20shows.png)
 
-![Login](./screenshots/login.png)
+### Shows
+![Shows](./screenshots/shows%20(2).png)
 
-**Available Shows**
+### Seat Selection
+![Seat Selection](./screenshots/seat%20selection.png)
 
-![Shows](./screenshots/shows.png)
+### Signup Page
+![Signup](./screenshots/signup.png)
 
-**Seat Selection** — live status (available / held / booked)
 
-![Seat Selection](./screenshots/seat-selection.png)
 
-**Booking History**
-
-![My Bookings](./screenshots/my-bookings.png)
-
----
 
 ## 🏗️ Architecture
 
