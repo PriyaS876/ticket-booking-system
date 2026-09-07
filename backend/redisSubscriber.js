@@ -1,8 +1,9 @@
 const redis = require('redis');
 const pool = require('./db');
+require('dotenv').config();
 
 const subscriber = redis.createClient({
-  url: process.env.REDIS_URL || 'redis://localhost:6379'
+  url: process.env.REDIS_URL || 'redis://localhost:6379',
 });
 
 subscriber.on('error', (err) => console.error('Redis Subscriber Error:', err));
